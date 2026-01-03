@@ -1,4 +1,4 @@
-version: '3.8'
+# docker-compose.yml
 
 services:
   api:
@@ -26,7 +26,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: interior_design
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
